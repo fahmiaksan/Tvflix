@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+.wrap {
+  @apply px-16 lg:px-40 md:px-28
+}
+
+.swiper {
+  max-width: 730px;
+}
+
+.swiper-wrapper {
+  width: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+  border-radius: 20px;
+}
